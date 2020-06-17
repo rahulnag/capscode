@@ -1,0 +1,44 @@
+[
+    {
+        "courseName": "HTML5 & CSS3",
+        "courseDescrption": "",
+        "coursePrice": "1000 INR",
+        "courseDuration": "2 months",
+        "image": "./Image/html5_css3.png"
+    },
+    {
+        "courseName": "JavaScript",
+        "courseDescrption": "",
+        "coursePrice": "2000 INR",
+        "courseDuration": "2 months",
+        "image": "./Image/javascript.png"
+    },
+    {
+        "courseName": "React JS",
+        "courseDescrption": "",
+        "coursePrice": "3000 INR",
+        "courseDuration": "6 months",
+        "image": "./Image/reactjs.png"
+    },
+    {
+        "courseName": "React Native",
+        "courseDescrption": "",
+        "coursePrice": "3000 INR",
+        "courseDuration": "6 months",
+        "image": "./Image/reactnative.png"
+    },
+    {
+        "courseName": "Node JS",
+        "courseDescrption": "",
+        "coursePrice": "3000 INR",
+        "courseDuration": "6 months",
+        "image": "./Image/node.png"
+    },
+    {
+        "courseName": "Git/ GitHub",
+        "courseDescrption": "",
+        "coursePrice": "3000 INR",
+        "courseDuration": "6 months",
+        "image": "./Image/github.svg"
+    }
+]
