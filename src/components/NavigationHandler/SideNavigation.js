@@ -45,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
+    borderBottomRightRadius: '30px',
+    borderTopRightRadius: '30px'
   },
   content: {
     flexGrow: 1,
@@ -93,7 +95,7 @@ function TopSideNavigation(props) {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
-      color='red'
+        color='red'
         position="fixed"
         className={classes.appBar}
       >
@@ -107,7 +109,7 @@ function TopSideNavigation(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography style={{textShadow: '2px 2px 5px yellow'}} variant="h6" noWrap>
             {`<CapsCode />`}
           </Typography>
         </Toolbar>

@@ -12,16 +12,19 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    
   },
 });
 
+
+
 function TopTab() {
   const classes = useStyles();
-  console.log("mmmmmmmmmmmmmmm"+localStorage.getItem('currentTab'))
+  // console.log("mmmmmmmmmmmmmmm"+localStorage.getItem('currentTab'))
   
   // localStorage.setItem('currentTab', 0);
   const [value, setValue] = React.useState(Number(localStorage.getItem('currentTab')));
-  console.log("/////////////",value)
+  // console.log("/////////////",value)
   
   const handleChange = (event, newValue) => {
     localStorage.setItem('currentTab', newValue);
@@ -33,9 +36,9 @@ function TopTab() {
        {/* I HAVE USED HashRouter THEN ONLY IT WORKED FINE HERE BELOW AND ASLO IN APP.JS COMPONENT*/}
       <HashRouter>
       <CssBaseline />
-      <AppBar position="fixed" color="default">
-      <Typography variant="h6" noWrap>
-            {`<CapsCode />`}
+      <AppBar position="fixed" color="default"s>
+      <Typography variant="h6" noWrap style={{textShadow: '2px 2px 5px yellow',paddingLeft: '15px', paddingTop: '5px', color:'black'}}>
+            {"< CapsCode />"}
       </Typography>
       <Tabs
         value={value}

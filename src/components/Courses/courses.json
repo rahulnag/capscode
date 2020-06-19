@@ -1,44 +1,56 @@
 [
     {
+        "id": "1",
         "courseName": "HTML5 & CSS3",
-        "courseDescrption": "",
+        "courseDescrption": "Skeleton of web development",
         "coursePrice": "1000 INR",
         "courseDuration": "2 months",
-        "image": "./Image/html5_css3.png"
+        "image": "./Image/html5_css3.png",
+        "syllabus": ["1:Basic HTML tags" ,"2: Document Model" ,"3","4","5","6","7"]
     },
     {
+        "id": "2",
         "courseName": "JavaScript",
         "courseDescrption": "",
         "coursePrice": "2000 INR",
         "courseDuration": "2 months",
-        "image": "./Image/javascript.png"
+        "image": "./Image/javascript.png",
+        "syllabus": ["1","2","3","4"]
     },
     {
+        "id": "3",
         "courseName": "React JS",
         "courseDescrption": "",
         "coursePrice": "3000 INR",
         "courseDuration": "6 months",
-        "image": "./Image/reactjs.png"
+        "image": "./Image/reactjs.png",
+        "syllabus": ["1","2","3","4"]
     },
     {
+        "id": "4",
         "courseName": "React Native",
         "courseDescrption": "",
         "coursePrice": "3000 INR",
         "courseDuration": "6 months",
-        "image": "./Image/reactnative.png"
+        "image": "./Image/reactnative.png",
+        "syllabus": ["1","2","3","4"]
     },
     {
+        "id": "5",
         "courseName": "Node JS",
         "courseDescrption": "",
         "coursePrice": "3000 INR",
         "courseDuration": "6 months",
-        "image": "./Image/node.png"
+        "image": "./Image/node.png",
+        "syllabus": ["1","2","3","4"]
     },
     {
+        "id": "6",
         "courseName": "Git/ GitHub",
         "courseDescrption": "",
         "coursePrice": "3000 INR",
         "courseDuration": "6 months",
-        "image": "./Image/github.svg"
+        "image": "./Image/github.svg",
+        "syllabus": ["1","2","3","4"]
     }
 ]

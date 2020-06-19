@@ -7,10 +7,10 @@ const theme = createMuiTheme();
 
 theme.typography.p = {
   fontSize: '0.7rem',
-  color: 'pink',
+  // color: 'pink',
   '@media (min-width:600px)': {
     fontSize: '0.7rem',
-    color:'red'
+    // color:'red',
     
   },
   [theme.breakpoints.up('smDown')]: {
@@ -30,7 +30,7 @@ class Home extends React.Component{
         
         <>
         
-        <Grid container style={{height:'100%', backgroundColor:'black',minHeight: '93.5vh'}}>
+        <Grid container style={{paddingTop:'50px', height:'100%', backgroundColor:'black',minHeight: '93.5vh'}}>
             <Grid item sm={12} md={6} lg={6} style={{ width:'100%', paddingLeft:'30px',paddingRight:'30px'}}>
             <ThemeProvider theme={theme}>
                 <Typography variant="p" style={{color:'#eeff41',fontWeight:"fontWeightLight"}}>

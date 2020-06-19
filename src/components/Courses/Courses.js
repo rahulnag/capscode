@@ -5,22 +5,28 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import CourseFile from './courses.json';
+import { withStyles } from '@material-ui/core/styles';
+import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
+import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     minHeight: '100vh',
-    margin:'20px'
+    margin:'30px',
+    marginTop: '90px',
   },
   paper: {
-    marginTop: '60px',
+    marginTop: '20px',
     padding: '20px',
     width:'100%',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
   },
   image: {
     // backgroundColor:'red', 
-    width: '50%',
-    height: '100%',
+    width: '13em',
+    height: '10em',
   },
   img: {
     // backgroundColor:'red',
@@ -34,9 +40,57 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const ExpansionPanel = withStyles({
+  root: {
+    // border: '1px solid rgba(0, 0, 0, .125)',
+    boxShadow: 'none',
+    '&:not(:last-child)': {
+      borderBottom: 0,
+    },
+    '&:before': {
+      display: 'none',
+    },
+    '&$expanded': {
+      margin: 'auto',
+    },
+  },
+  expanded: {},
+})(MuiExpansionPanel);
+
+const ExpansionPanelSummary = withStyles({
+  root: {
+    // backgroundColor: 'rgba(0, 0, 0, .03)',
+    borderBottom: '1px solid rgba(0, 0, 0, .125)',
+    marginBottom: -1,
+    minHeight: 10,
+    height: 15,
+    '&$expanded': {
+      minHeight: 15,
+    },
+  },
+  content: {
+    '&$expanded': {
+      margin: '12px 0',
+    },
+  },
+  expanded: {},
+})(MuiExpansionPanelSummary);
+
+const ExpansionPanelDetails = withStyles((theme) => ({
+  root: {
+    padding: theme.spacing(2),
+  },
+}))(MuiExpansionPanelDetails);
+
+
 export default function ComplexGrid() {
   const classes = useStyles();
 
+  const [expanded, setExpanded] = React.useState('panel1');
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  }
   return (
     <div className={classes.root}>
       {
@@ -56,23 +110,39 @@ export default function ComplexGrid() {
                   {c.courseName}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Full resolution 1920x1080 • JPEG
+                  {c.courseDescrption}
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  ID: 1030114
+                  {c.courseDuration}
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
-                </Typography>
+                {/* <Typography variant="body2" style={{ cursor: 'pointer' }}>
+                  Click to get syllabus
+              </Typography> */}
+
+
               </Grid>
             </Grid>
             <Grid item>
-        <Typography variant="subtitle1">{c.coursePrice}</Typography>
+              <Typography variant="subtitle1">{c.coursePrice}</Typography>
             </Grid>
           </Grid>
         </Grid>
+        <ExpansionPanel circle expanded={expanded === i} onChange={handleChange(i)}>
+              <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
+                <Typography style={{marginBottom:'12px',textAlign:'center'}}>Click to get syllabus</Typography>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails>
+                <Typography>
+                  {
+                    c.syllabus.map((c,i) => {
+                      return <p>{c}</p>
+                    })
+                  }
+                </Typography>
+              </ExpansionPanelDetails>
+        </ExpansionPanel>
       </Paper>
         )
       })
