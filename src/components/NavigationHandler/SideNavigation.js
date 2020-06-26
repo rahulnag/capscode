@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function TopSideNavigation(props) {
+function SideNavigation(props) {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -79,11 +79,13 @@ function TopSideNavigation(props) {
       <List onClick={handleDrawerToggle}> 
       <HashRouter>
           <ListItem selected={selected === 0} divider button component={Link} to='/'><ListItemText onClick={()=> setter(0)}>Home</ListItemText></ListItem> 
-          <ListItem selected={selected === 1} divider button component={Link} to='/course'><ListItemText onClick={()=> setter(1)}>Courses</ListItemText></ListItem>  
-          <ListItem selected={selected === 2} divider button component={Link} to='/aboutus'><ListItemText onClick={()=> setter(2)}>About Us</ListItemText></ListItem> 
-          <ListItem selected={selected === 3} divider button component={Link} to='/contact'><ListItemText onClick={()=> setter(3)}>Contact</ListItemText></ListItem> 
-          <ListItem selected={selected === 4} divider button component={Link} to='/blog'><ListItemText onClick={()=> setter(4)}>Blog</ListItemText></ListItem>
-          <ListItem selected={selected === 5} button component={Link} to='/gallery'><ListItemText onClick={()=> setter(5)}>Gallery</ListItemText></ListItem>
+          <ListItem selected={selected === 1} divider button component={Link} to='/course'><ListItemText onClick={()=> setter(1)}>Courses</ListItemText></ListItem> 
+          <ListItem selected={selected === 2} divider button component={Link} to='/career'><ListItemText onClick={()=> setter(2)}>Career</ListItemText></ListItem>  
+          <ListItem selected={selected === 3} divider button component={Link} to='/aboutus'><ListItemText onClick={()=> setter(3)}>About Us</ListItemText></ListItem> 
+          <ListItem selected={selected === 4} divider button component={Link} to='/contact'><ListItemText onClick={()=> setter(4)}>Contact</ListItemText></ListItem> 
+          <ListItem selected={selected === 5} divider button component={Link} to='/blog'><ListItemText onClick={()=> setter(5)}>Blog</ListItemText></ListItem>
+          <ListItem selected={selected === 6} divider button component={Link} to='/gallery'><ListItemText onClick={()=> setter(6)}>Gallery</ListItemText></ListItem>
+          <ListItem selected={selected === 7} button component={Link} to='/services'><ListItemText onClick={()=> setter(7)}>Services</ListItemText></ListItem>
         </HashRouter>
       </List>
     </div>
@@ -139,4 +141,4 @@ function TopSideNavigation(props) {
 
 
 
-export default TopSideNavigation;
+export default SideNavigation;

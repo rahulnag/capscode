@@ -3,3 +3,18 @@ create expansion pannel in course.js
 so that when the user will click on the course name card the they will be able to see the syllabus 
 for that particular course
 
+//TODO:
+add 404 error page and page not found page and internet connection not available page
+
+//TODO:
+learn how to implement class and internal css in react
+
+//INFO:
+Q: 
+https://stackoverflow.com/questions/57697664/what-is-the-benefit-of-using-withstyles-over-makestyles
+
+//TODO:
+make some clarification on smUp, smDown
+
+//TODO:
+add social media link in all the team member's card

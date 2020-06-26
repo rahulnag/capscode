@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "eventName": "Basics of programing",
+        "duration": "1hr",
+        "link": "www.google.com",
+        "cardColor": "linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%)",
+        "date_time": "22 July 3pm IST",
+        "platform": "Hangout",
+        "type": "Online"
+    },
+    {
+        "id": "2",
+        "eventName": "HTML5 & CSS3",
+        "duration": "1hr",
+        "link": "www.google.com",
+        "cardColor": "linear-gradient(to right, #fa709a 0%, #fee140 100%)",
+        "date_time": "22 July 3pm IST",
+        "platform": "Hangout",
+        "type": "Offline"
+    },
+    {
+        "id": "3",
+        "eventName": "JavaScript",
+        "duration": "1hr",
+        "link": "www.google.com",
+        "cardColor": "linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)",
+        "date_time": "22 July 3pm IST",
+        "platform": "Hangout",
+        "type": "Offline"
+    },
+    {
+        "id": "3",
+        "eventName": "Git/ GitHub",
+        "duration": "1hr",
+        "link": "www.google.com",
+        "cardColor": "linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)",
+        "date_time": "22 July 3pm IST",
+        "platform": "Hangout",
+        "type": "Online"
+    }
+]

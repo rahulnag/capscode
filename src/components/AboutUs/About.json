@@ -1,0 +1,48 @@
+[
+    {
+        "id":"1",
+        "avatarShortName": "R",
+        "teamMemberName": "Rahul",
+        "teamMemberImage": "./Images/rahul.png",   
+        "designation": "Co-Founder",
+        "joinedDate": "20 JAN 2020",
+        "desc": "i am a software developer expert"
+
+    },
+    {
+        "id":"2",
+        "avatarShortName": "M",
+        "teamMemberName": "Mohit",
+        "teamMemberImage": "./Images/mohit.png",
+        "designation": "Co-Founder",
+        "joinedDate": "20 JAN 2020",
+        "desc": "i am a software developer expert"
+    },
+    {
+        "id":"3",
+        "avatarShortName": "P",
+        "teamMemberName": "Priyanka",
+        "teamMemberImage": "./Images/priyanka.png",
+        "designation": "Founder",
+        "joinedDate": "20 JAN 2020",
+        "desc": "i am a software developer expert"
+    },
+    {
+        "id":"5",
+        "avatarShortName": "P",
+        "teamMemberName": "Prabir",
+        "teamMemberImage": "./Images/prabir.png",
+        "designation": "Co-Founder",
+        "joinedDate": "20 JAN 2020",
+        "desc": "i am a software developer expert"
+    },
+    {
+        "id":"6",
+        "avatarShortName": "U",
+        "teamMemberName": "You",
+        "teamMemberImage": "./Images/prabir.png",
+        "designation": "Co-Founder",
+        "joinedDate": "20 JAN 2020",
+        "desc": "i am a software developer expert"
+    }
+]

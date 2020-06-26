@@ -9,6 +9,8 @@ import { withStyles } from '@material-ui/core/styles';
 import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -131,7 +133,8 @@ export default function ComplexGrid() {
         </Grid>
         <ExpansionPanel circle expanded={expanded === i} onChange={handleChange(i)}>
               <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
-                <Typography style={{marginBottom:'12px',textAlign:'center'}}>Click to get syllabus</Typography>
+                <Typography style={{marginBottom:'12px',textAlign:'center', color:'grey'}}><b>Click to get syllabus</b></Typography>
+                <ExpandMoreIcon/>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>
