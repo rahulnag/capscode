@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAOA,UANE,WAAY,CAEZ,QAAiB,CACjB,SAQF,CALA,KAGE,sBAEF","file":"main.b9642b2f.chunk.css","sourcesContent":["html {\r\n  height: 100%;\r\n  margin: 0px;\r\n  margin-bottom: 0%;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n  margin: 0%;\r\n  padding: 0%;\r\n  font-family: sans-serif;\r\n  height: 100%;\r\n}\r\n"]}
